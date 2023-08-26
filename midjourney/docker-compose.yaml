@@ -4,7 +4,7 @@ networks:
 
 services:
   mj-server:
-    image: kunyu/midjourney-api:1.0
+    image: hahafhaha/mj-api:latest
     ports:
       - "8062:8062"
     environment:
@@ -18,7 +18,7 @@ services:
     restart: unless-stopped
 
   mj-bot:
-    image: kunyu/midjourney-api:1.0
+    image: hahafhaha/mj-api:latest
     environment:
       - LOG_LEVEL=${LOG_LEVEL}
       - USER_TOKEN=${USER_TOKEN}
